@@ -3,9 +3,7 @@
         <div class="big">
             <div class="inner">
                 <img src="../../assets/notFound.png">
-                <p>页面被神秘力量吸走了，请联系我们修复</p>
-                <p>↓</p>
-                <img src="../../assets/qm.png" class="leftPic">
+                <p>404 Not Found</p>
             </div>
         </div>
     </div>

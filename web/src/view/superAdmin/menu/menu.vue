@@ -7,6 +7,11 @@
     <!-- 由于此处菜单跟左侧列表一一对应所以不需要分页 pageSize默认999 -->
     <el-table :data="tableData" border row-key="ID" stripe>
       <el-table-column label="ID" min-width="100" prop="ID"></el-table-column>
+      <el-table-column label="展示名称" min-width="120" prop="authorityName">
+        <template slot-scope="scope">
+          <span>{{scope.row.meta.title}}</span>
+        </template>
+      </el-table-column>
       <el-table-column label="路由Name" min-width="160" prop="name"></el-table-column>
       <el-table-column label="是否隐藏" min-width="100" prop="hidden">
         <template slot-scope="scope">
@@ -16,11 +21,6 @@
       <el-table-column label="父节点" min-width="90" prop="parentId"></el-table-column>
       <el-table-column label="排序" min-width="70" prop="sort"></el-table-column>
       <el-table-column label="文件路径" min-width="360" prop="component"></el-table-column>
-      <el-table-column label="展示名称" min-width="120" prop="authorityName">
-        <template slot-scope="scope">
-          <span>{{scope.row.meta.title}}</span>
-        </template>
-      </el-table-column>
       <el-table-column label="图标" min-width="140" prop="authorityName">
         <template slot-scope="scope">
           <span>{{scope.row.meta.icon}}</span>
